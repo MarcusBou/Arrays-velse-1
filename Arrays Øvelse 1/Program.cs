@@ -20,10 +20,10 @@ namespace Arrays_Øvelse_1
             do {
                 Console.Clear();
                 Console.WriteLine("Login");
-
+                //tager imod og ser om din bruger findes
                 Console.Write("\nBruger: ");
                 tryBruger = Console.ReadLine();
-
+                //tjekker om brugeren findes i arrayet
                 for (int i = 0; i < Bruger.Length; i++)
                 {
                     if (tryBruger == Bruger[i])
@@ -37,8 +37,10 @@ namespace Arrays_Øvelse_1
 
             do
             {
+                //ser hvilket password du skriver
                 Console.Write("Passsword: ");
                 tryPass = Console.ReadLine();
+                //tjekker om dit password passer i arrayet
                 for (int k = 0; k <= passforsøg-1; k++)
                 {
                     if (tryPass == Pass[id])
